@@ -1,0 +1,105 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+
+  --tubuntu-red: #d03241;
+  --dark: #181818;
+  --white: #fff;
+  --grey: #c9c9cb;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100vw;
+  height: 100px;
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  color: var(--dark);
+  border-bottom: 2px solid var(--tubuntu-red);
+  box-shadow: 0 0 5px var(--tubuntu-red);
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.logo span {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--tubuntu-red);
+}
+
+/* ROBO LSIT */
+.phone-view-details {
+  display: none;
+}
+
+
+.card-list {
+  margin-top: 50px;
+  margin-inline: auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
+/* ROBO CARD */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 120px;
+  box-shadow: 0 0 5px var(--tubuntu-red);
+  border-radius: 6px;
+}
+
+.card img {
+  padding: 5px;
+  height: 120px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.card-details {
+  flex-basis: 60%;
+  min-width: 0;
+}
+
+.card-details p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;   
+  max-width: 100%;  
+}
+
+@media (max-width: 800px) {
+  .phone-view-details {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 14px;
+    background-color: var(--tubuntu-red);
+    color: var(--white);
+    box-shadow: 0 0 5px var(--tubuntu-red);
+  }
+
+  .card-list {
+    margin-top: 10px;
+  }
+
+  .card-details {
+    display: none;
+  }
+}
