@@ -31,14 +31,14 @@ To build and run the application, follow these steps:
 2. **Install the project dependencies:**
 
     ```npm install
-    ```
+    
 
 3. **Run the application:**
 
     ```npm start
-    ```
+    
 
 4. **Running the tests:**
 
     ```npm test
-    ```
+    
